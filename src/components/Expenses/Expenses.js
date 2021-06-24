@@ -6,10 +6,10 @@ import ExpensesFilter from './ExpensesFilter';
 
 function Expenses(props) {
 
-  const[filteredYear, setfilteredYear] = useState('2020');
+  const[filteredYear, setFilteredYear] = useState('2020');
 
   const filterChangeHandler = selectedYear =>{
-    setfilterYear(selectedYear);
+    setFilteredYear(selectedYear);
   }
 
   return (
