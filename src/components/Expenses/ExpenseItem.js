@@ -28,6 +28,7 @@ const ExpenseItem = (props) =>{  // arrow function
 
 // ************************************************************
 
+
 const [title,setTitle] = useState(props.title);
 console.log('ExpenseItem is evaluated by react');
 
