@@ -1,5 +1,4 @@
 import React,{useState} from 'react';
-import ExpenseItem from "./components/Expenses/ExpenseItem";
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 // import "./App.css";
@@ -60,7 +59,7 @@ const [expenses,setExpenses]=useState(DUMMY_EXPENSES);
 
   return (
     <div>
-      <h1>lets get started !</h1>
+      {/* <h1>lets get started !</h1> */}
       <NewExpense onAddExpense ={addExpenseHandler}></NewExpense>
       {/* <ExpenseItem
         title={expenses[0].title}

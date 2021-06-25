@@ -1,4 +1,4 @@
-import React , {useState} from 'react';
+import React from 'react';
   
 import ExpenseDate from './ExpenseDate';
 import './ExpenseItem.css';
@@ -29,15 +29,15 @@ const ExpenseItem = (props) =>{  // arrow function
 // ************************************************************
 
 
-const [title,setTitle] = useState(props.title);
-console.log('ExpenseItem is evaluated by react');
+// const [title,setTitle] = useState(props.title);
+// console.log('ExpenseItem is evaluated by react');
 
-// state function always return array with two value
+// // state function always return array with two value
 
-const ClickHandler = () => {
-  setTitle('updated');
-  console.log(title);
-};
+// const ClickHandler = () => {
+//   setTitle('updated');
+//   console.log(title);
+// };
 
 
 return (
@@ -51,10 +51,10 @@ return (
 
       {/* <div>{props.date.toISOString()}</div> */}
       <div className='expense-item__description'>
-        <h2>{title}</h2>
+        <h2>{props.title}</h2>
         <div className = "expense-item__price">${props.amount}</div>
       </div>
-      <div><button onClick={ClickHandler} >change Title</button></div>
+      {/* <div><button onClick={ClickHandler} >change Title</button></div> */}
       
     </Card>
   );
